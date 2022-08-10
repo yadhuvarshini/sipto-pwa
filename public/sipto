@@ -1,0 +1,60 @@
+top performer - funds 
+banners - 1) ads
+	2)db  user info
+	3)panels
+	
+
+https://onmeta.in/ -> recuring payment check
+
+
+schema                                                   kyc id check
+------------------------------------------------------------------------------
+name 										
+phonenumber
+user id  --- cred
+email
+bank account details														
+------------------------------------------------
+kyc id number  external database 
+-----------------------------------------
+
+
+-----------------------------------------------
+assets no of holding  , coinset asset name                                        
+		eg coinset no of holding 
+			eg metaverse top 20 holding
+
+
+current port folio value = sum of all portfolio - individual 
+
+------------------------------------------------------------------
+(all)    transaction                      
+            _id
+            date 
+            time
+            asset 
+            public hash 
+---------------------------------------------------
+
+
+recurring payment 
+amt 
+frequency (week / monthly / daily )
+
+withdrawl transaction
+
+
+-------------------------------------------------------------------------
+fiat - > usdc -> crypto coin 
+
+cc -> usdc -> fiat/bank 
+
+-----------------------------------------------------------------------------
+coinset --> metaverse 
+
+bluechip ---> $5
+
+--------------------------------------------------------------------
+email id
+phone number
+otp

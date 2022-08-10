@@ -1,0 +1,46 @@
+<%- include("./partials/header" ) %>
+
+    <body>
+        <form action="/register" method="POST" class="needs-validation">
+
+            <div class="container login-detail w-25">
+                <label for="validationServer01" class="form-label">Name</label>
+                <input type="text" class="form-control" id="validationServer01"
+                    name="username" required>
+
+                    <label for="validationServer02" class="form-label">Contact number</label>
+                <input type="number" class="form-control"
+                    id="validationServer02" name="phno" maxlength="10" required>
+
+                    <label for="validationServer03" class="form-label">Email</label>
+                <input type="email" class="form-control"
+                    id="validationServer03" name="email"  required>
+
+
+                <label for="validationServer04" class="form-label">Password</label>
+                <input type="password" class="form-control"
+                    id="validationServer04" name="password" required>
+
+                <label for="validationServer04" class="form-label">Re-enter
+                    Password</label>
+                <input type="password" class="form-control"
+                    id="validationServer04" required>
+
+                <center>
+                    <a href="/home"><button class="btn btn-primary mt-2 btn-md"
+                            type="submit">Register</button></a>
+                    <br><br>
+
+                    <small class="font text-white m-3">Already Have an Account ?
+                        <a
+                            href="/">Login</a> </small>
+                </center>
+
+            </div>
+        </div>
+    </form>
+
+    <script src="../public/js/validationerror.js"></script>
+
+</body>
+<%- include("./partials/footer") %>

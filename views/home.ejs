@@ -1,0 +1,120 @@
+<%- include("./partials/header" ) %>
+  <%- include("./partials/navbar" ) %>
+    
+  <style>
+
+    .container-main {
+       
+        align-items: center;
+        justify-content: center;
+    }
+    a{
+      text-decoration: none;
+    }
+
+    .buttons button {
+      width: 160px;
+    }
+
+    .subcard .card {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+
+    div.col-6 {
+        padding: 0%;
+    }
+
+  </style>
+    
+      <center>
+      <div class="container-small container-main">
+        <a href="/home/<%= currentUser._id %>">
+          <div class="card bg-dark my-4" style="width: 18rem;">
+            <div class="card-body">
+              <div class="bg-black">
+                <h5 class="card-title text-light">Hey <%= currentUser.username%>!!
+                </h5>
+
+                <br>
+                <h6 class="card-subtitle mb-2 text-muted">Portfolio Holding</h6>
+                <p class="card-text">
+                  $<%= currentUser.holding%>
+                </p>
+                <br>
+              </div>
+            </div>
+          </div>
+          </a>
+
+          <a href="/home/<%= currentUser._id %>">
+          <div class="container my-4 subcard">
+            <div class="row">
+
+              <div class="col-6">
+
+                <div class="card bg-dark" width="80%">
+                  <div class="card-body">
+                    <div class="bg-black">
+                      <h5 class="card-title text-light">Invested Value</h5>
+      
+                      <br>
+                      <p class="card-text">
+                        $<%= currentUser.holding%>
+                      </p>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>
+           
+
+              
+              <div class="col-6">
+                <a href="/home/<%= currentUser._id %>">
+                <div class="card bg-dark"  width="80%">
+                  <div class="card-body">
+                    <div class="bg-black">
+                      <h5 class="card-title text-light">Available Balance</h5>
+      
+                      <br>
+                      <p class="card-text">
+                        $<%= currentUser.holding%>
+                      </p>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </a>
+<br>
+            <div class="buttons">
+              <a href="/home/new" class="card-link"><button class="bg-dark text-light p-1 dev">Deposit Value</button></a>
+              <a href="/home/withdraw" class="card-link"><button class="bg-dark text-light p-1 wd">withdraw</button></a>
+              <a href="/home/coinset" class="card-link"><button class="bg-dark text-light p-1 wd">Coinset</button></a>
+            </div>
+      </div>
+    </center>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="card bg-dark"  width="80%" height="100%">
+          <div class="card-body">
+            <div class="bg-black">
+              <h5 class="card-title text-light">BANNER</h5>
+
+              <br>
+              <p class="card-text">
+              </p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <%- include("./partials/footer" ) %>

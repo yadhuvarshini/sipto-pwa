@@ -1,0 +1,32 @@
+<%- include("./partials/header") %>
+
+<body>
+    <form action="/" method="POST" class="needs-validation">
+
+        <div class="container login-detail mt-lg-5 pt-lg-5 w-25">
+
+            <label class="form-label">username</label>
+            <input type="text" name="username"  id="validationCustom02" class="form-control" required>
+
+            <label class="form-label">Password</label>
+            <input type="password" name="password"  id="validationCustom03" class="form-control" required>
+
+            <center>
+                <a href="/home"><button class="btn btn-primary mt-2 btn-md
+                        text-white" type="submit"> Login </button></a>
+                <br><br>
+
+                <small class="font text-white m-
+                
+                
+                3">New to Sipto ? <a
+                        href="/register">Register</a> </small>
+            </center>
+
+
+        </div>
+
+    </form>
+    <script src="../public/js/validationerror.js"></script>
+
+<%- include("./partials/footer") %>

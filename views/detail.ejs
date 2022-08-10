@@ -1,0 +1,70 @@
+<%- include("./partials/header" ) %>
+  <%- include("./partials/navbar" ) %>
+    
+  <style>
+    body {
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+    a{
+      text-decoration: none;
+    }
+
+    .buttons button {
+      width: 160px;
+    }
+
+    .subcard .card {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+
+    div.col-6 {
+        padding: 0%;
+    }
+
+  </style>
+    
+      <center>
+      <div class="container-small">
+        <a href="/home/<%= accounts._id %>">
+          <div class="card bg-dark my-4" style="width: 18rem;">
+            <div class="card-body">
+              <div class="bg-black">
+                <h6 class="card-subtitle mb-2 text-muted">Portfolio Holding</h6>
+                <p class="card-text">
+                  $<%= accounts.holding%>
+                </p>
+                Increased Percentage
+                <br>
+              </div>
+            </div>
+          </div>
+          </a>
+
+          <div class="buttons">
+            <a href="/home/new" class="card-link"><button class="bg-dark text-light p-1 dev">Deposit Value</button></a>
+          </div>
+
+          
+    </center>
+
+    <!-- <div class="container mt-4">
+      <div class="row">
+        <div class="card bg-dark"  width="80%" height="100%">
+          <div class="card-body">
+            <div class="bg-black">
+              <h5 class="card-title text-light">BANNER</h5>
+
+              <br>
+              <p class="card-text">
+              </p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+    <%- include("./partials/footer" ) %>
